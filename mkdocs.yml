@@ -1,0 +1,72 @@
+site_name: BUAA INFO
+repo_url: https://github.com/buaainfo/buaainfo
+
+extra:
+  homepage: https://buaa.info
+  #version:
+  #  provider: mike Need_to_study
+  social:
+    - link: https://github.com/buaainfo
+      icon: fontawesome/brands/github
+      name: BUAAINFO on Github
+
+copyright: Copyright &copy; 2022 - 2022 buaa.info
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/weather-night
+        name: 切换到夜间模式
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到日间模式
+  font: false
+  language: zh
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    # Navi Below
+    - navigation.instant #instant_load
+    - navigation.tabs #pinned_tabs
+    - navigation.tracking #right_navi_track
+    - navigation.top #go_top
+    - toc.follow #right_navi_roll
+    #- toc.integrate      Needing
+
+    # Search Below
+    - search.highlight
+    - search.share
+    - search.suggest
+
+    # Header
+    - header.autohide
+
+    # Announce
+    #- announce.dismiss   Needing
+
+# Need To Be Done
+#extra_css:
+#  - stylesheets/extra.css
+
+plugins:
+  - search:
+      jieba_dict: dict.txt
+  - tags:
+      tags_file: tags.md
+  #- social: Needing
+  #- blog: Needing
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+      enable_creation_date: true
+      enabled: true
