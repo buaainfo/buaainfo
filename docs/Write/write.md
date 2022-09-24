@@ -12,7 +12,7 @@
 
 对于本文档，需要您安装必要的库。
 
-```py
+```shell title="Pip Install"
 pip install \
               mkdocs-material \
               mkdocs-awesome-pages-plugin \
