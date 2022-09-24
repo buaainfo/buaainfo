@@ -54,8 +54,6 @@ theme:
   language: zh
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
-  icon:
-    repo: fontawesome/brands/github
 
   # Features
   features:
