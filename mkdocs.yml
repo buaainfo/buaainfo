@@ -61,7 +61,6 @@ theme:
 
 # Extra files
 #extra_css:
-#  - stylesheets/extra.css
 
 # Plugin Settings
 plugins:
