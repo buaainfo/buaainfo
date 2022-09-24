@@ -1,10 +1,10 @@
-:root > * {
+:root>* {
   --md-hue: 232;
-  --md-default-fg-color:        #005bab;
-  --md-default-bg-color: hsla(var(--md-hue),15%,21%,1);
-  --md-code-bg-color:hsla(var(--md-hue),15%,15%,1);
-  --md-code-fg-color:hsla(var(--md-hue),18%,86%,1);
-  --md-default-fg-color--light :         hsla ( var(--md-hue) , 0 % , 0 % , 0.54 );
-  --md-default-fg-color--lighter :       hsla ( var(--md-hue), 0 % , 0 % , 0.32 );
-  
+  --md-default-fg-color: #005bab;
+  --md-default-bg-color: hsla(var(--md-hue), 15%, 21%, 1);
+  --md-code-bg-color: hsla(var(--md-hue), 15%, 15%, 1);
+  --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 1);
+  --md-default-fg-color--light: hsla (var(--md-hue), 0 %, 0 %, 0.54);
+  --md-default-fg-color--lighter: hsla (var(--md-hue), 0 %, 0 %, 0.32);
+
 }

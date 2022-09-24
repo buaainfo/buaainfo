@@ -1,6 +1,6 @@
+# Site Settings
 site_name: BUAA INFO
 repo_url: https://github.com/buaainfo/buaainfo
-
 extra:
   homepage: https://buaa.info
   #version:
@@ -9,9 +9,9 @@ extra:
     - link: https://github.com/buaainfo
       icon: fontawesome/brands/github
       name: BUAAINFO on Github
-
-copyright: Copyright &copy; 2022 - 2022 buaa.info
-
+copyright: 版权所有 &copy; 2022 - 2022 BUAA.Info
+  
+# Theme Settings
 theme:
   name: material
   palette:
@@ -41,7 +41,7 @@ theme:
     - navigation.tracking #right_navi_track
     - navigation.top #go_top
     - toc.follow #right_navi_roll
-    #- toc.integrate      Needing
+    - toc.integrate #Navi_integration
 
     # Search Below
     - search.highlight
@@ -54,13 +54,19 @@ theme:
     # Announce
     #- announce.dismiss   Needing
 
-# Need To Be Done
+    # Content
+    - content.tabs.link
+    - content.code.annotate
+    - content.tooltips
+
+# Extra files
 #extra_css:
 #  - stylesheets/extra.css
 
+# Plugin Settings
 plugins:
   - search:
-      jieba_dict: dict.txt
+      jieba_dict: dict.txt.big
   - tags:
       tags_file: tags.md
   #- social: Needing
@@ -70,3 +76,32 @@ plugins:
       fallback_to_build_date: true
       enable_creation_date: true
       enabled: true
+  - glightbox
+
+# Markdown Settings
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - tables
+  - footnotes
+  - pymdownx.betterem
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.smartsymbols
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
