@@ -67,8 +67,8 @@ theme:
 plugins:
   - search:
       jieba_dict: dict.txt.big
-  - tags:
-      tags_file: tags.md
+  #- tags:
+  #    tags_file: tags.md
   #- social: Needing
   #- blog: Needing
   - git-revision-date-localized:
