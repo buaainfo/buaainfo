@@ -1,47 +1,59 @@
-# Site Settings
+# Site Information
 site_name: 北航指北
-repo_url: https://github.com/buaainfo/buaainfo
-extra:
-  homepage: https://buaa.info
-  #version:
-  #  provider: mike Need_to_study
-  social:
-    - link: https://github.com/buaainfo
-      icon: fontawesome/brands/github
-      name: BUAAINFO on Github
-copyright: 版权所有 &copy; 2022 - 2022 BUAA.Info
+site_url: https://buaa.info
+site_author: Color
+site_description: >-
+  Here we live together!
   
-# Theme Settings
+# Repository
+repo_name: buaainfo/buaainfo
+repo_url: https://github.com/buaainfo/buaainfo
+
+# Copyright
+copyright: 版权所有 &copy; 2022 - 2022 BUAA.info
+  
+# Configuration
 theme:
   name: material
+
+  # Appearance
   palette:
     # Palette toggle for light mode
     - scheme: default 
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: 切换到夜间模式
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: 切换到日间模式
-  font: false
+
+  # Web Settings
+  font: false # No Google Font
   language: zh
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
   icon:
     repo: fontawesome/brands/github
+
+  # Features
   features:
-    # Navi Below
+    # Navi Settings
     - navigation.instant #instant_load
     - navigation.tabs #pinned_tabs
     - navigation.tracking #right_navi_track
     - navigation.top #go_top
+    - navigation.indexes #section_index
     - toc.follow #right_navi_roll
-    - toc.integrate #Navi_integration
+    #- toc.integrate #Navi_integration
 
-    # Search Below
+    # Search Settings
     - search.highlight
     - search.share
     - search.suggest
@@ -60,10 +72,9 @@ theme:
 # Extra files
 #extra_css:
 
-# Plugin Settings
+# Plugins
 plugins:
-  - search:
-      jieba_dict: dict.txt.big
+  - search
   #- tags:
   #    tags_file: tags.md
   #- social: Needing
@@ -75,7 +86,17 @@ plugins:
       enabled: true
   - glightbox
 
-# Markdown Settings
+# Customization
+extra:
+  homepage: https://buaa.info
+  #version:
+  #  provider: mike Need_to_study
+  social:
+    - link: https://github.com/buaainfo
+      icon: fontawesome/brands/github
+      name: BUAAINFO on Github
+
+# Extensions
 markdown_extensions:
   - abbr
   - attr_list
@@ -102,3 +123,18 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Page tree
+nav:
+  - 首页: 
+    - index.md
+  - 生存指南:
+    - 生存指南一: LivingGuide/index.md
+  - 常用:
+    - 常用站点: CommonUse/site.md
+    - 常用电话: CommonUse/phone.md
+  - 工具:
+    - Tool/index.md
+  - 加入我们: 
+    - joinus.md
+    - 编写方法: write.md

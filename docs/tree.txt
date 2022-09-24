@@ -1,0 +1,31 @@
+BUAA INFO
+│  CNAME
+│  mkdocs.yml
+│  README.md
+│  requirements.txt
+│  tree.txt
+│  
+├─.github
+│  └─workflows
+│          main.yml
+│          
+└─docs
+    │  index.md
+    │  joinus.md
+    │  write.md
+    │  
+    ├─assets
+    │  └─images
+    │ 
+    ├─CommonUse
+    │      example.md
+    │        
+    ├─LivingGuide
+    │      example.md
+    │      
+    ├─Tool
+    │      example.md
+    │      
+    └─stylesheets
+           example.css
+            
