@@ -18,7 +18,7 @@ jobs:
               jieba \
               mkdocs-glightbox \
               mkdocs-git-revision-date-localized-plugin \
-              mkdocs-git-authors-plugin\
+              mkdocs-git-authors-plugin \
               
 
       - run: mkdocs gh-deploy --force
