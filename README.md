@@ -1,16 +1,15 @@
-### Hi there 👋
+# Usage
 
-<!--
-**buaainfo/buaainfo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+* Install necessary pip packages
 
-Here are some ideas to get you started:
+```
+pip install \
+              mkdocs-material \
+              mkdocs-awesome-pages-plugin \
+              jieba \
+              mkdocs-glightbox \
+              mkdocs-git-revision-date-localized-plugin \
+              mkdocs-git-authors-plugin \
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* Then follow [HERE](https://buaainfo.github.io/buaainfo/Write/write/)

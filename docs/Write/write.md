@@ -10,10 +10,16 @@
 
 开始之前，我们认为您已经懂得一定的 [python](https://www.python.org/) 语言以及 [markdown](https://www.markdownguide.org/) 语言，并且在您的电脑上安装 [python 3.x](https://www.python.org/downloads/) 版本。
 
-对于本文档，需要您安装mkdocs pip库。
+对于本文档，需要您安装必要的库。
 
 ```
-pip install -r requirements.txt
+pip install \
+              mkdocs-material \
+              mkdocs-awesome-pages-plugin \
+              jieba \
+              mkdocs-glightbox \
+              mkdocs-git-revision-date-localized-plugin \
+              mkdocs-git-authors-plugin \
 ```
 
 ## 编写
@@ -22,7 +28,7 @@ pip install -r requirements.txt
 
 在编写开始时，您应当了解此文档的结构，这样有利于您的push被我们接受。
 
-您可以查看本项目下的 [tree.txt](tree.txt) 文档，或者 [mkdocs.yml](../mkdocs.yml) 的 nav 部分，这样方便您了解我们的大致框架，您可以发现我们更推荐创立单个的md文件，我们建议通过**关键词**来进行命名。
+您可以查看本项目下的 [tree.txt](tree.txt) 文档，或者 [mkdocs.yml](https://github.com/buaainfo/buaainfo/blob/main/mkdocs.yml) 的 nav 部分，这样方便您了解我们的大致框架，您可以发现我们更推荐创立单个的md文件，我们建议通过**关键词**来进行命名。
 
 ### 编写文档
 
@@ -33,7 +39,7 @@ pip install -r requirements.txt
 此外，您应当了解您有权利和义务编写的内容：
 
 * **在目录下创建新的md文件进行编写**
-* **在 [mkdocs.yml](../mkdocs.yml) 中的nav部分添加您的文档的名称及位置**
+* **在 [mkdocs.yml](https://github.com/buaainfo/buaainfo/blob/main/mkdocs.yml) 中的nav部分添加您的文档的名称及位置**
 
 ### 本地浏览
 
