@@ -4,3 +4,4 @@ mkdocs-git-revision-date-localized-plugin==0.8
 mkdocs-git-authors-plugin==0.3.3
 nltk<=3.4.5
 jieba==0.42.1
+mkdocs-glightbox==0.2.1
