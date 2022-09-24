@@ -1,5 +1,5 @@
 # Site Settings
-site_name: BUAA INFO
+site_name: 北航指北
 repo_url: https://github.com/buaainfo/buaainfo
 extra:
   homepage: https://buaa.info
@@ -16,15 +16,13 @@ theme:
   name: material
   palette:
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
+    - scheme: default 
       toggle:
         icon: material/weather-night
         name: 切换到夜间模式
 
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: 切换到日间模式
