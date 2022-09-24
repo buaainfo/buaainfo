@@ -15,4 +15,5 @@ jobs:
       - run: pip install \
               mkdocs-git-revision-date-localized-plugin \
               mkdocs-material
+              mkdocs-glightbox
       - run: mkdocs gh-deploy --force
