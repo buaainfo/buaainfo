@@ -12,7 +12,7 @@
 
 对于本文档，需要您安装必要的库。
 
-```
+```py
 pip install \
               mkdocs-material \
               mkdocs-awesome-pages-plugin \
@@ -28,7 +28,7 @@ pip install \
 
 在编写开始时，您应当了解此文档的结构，这样有利于您的push被我们接受。
 
-您可以查看本项目下的 [tree.txt](tree.txt) 文档，或者 [mkdocs.yml](https://github.com/buaainfo/buaainfo/blob/main/mkdocs.yml) 的 nav 部分，这样方便您了解我们的大致框架，您可以发现我们更推荐创立单个的md文件，我们建议通过**关键词**来进行命名。
+您可以查看本项目下的 [tree.txt](https://github.com/buaainfo/buaainfo/blob/main/docs/tree.txt) 文档，或者 [mkdocs.yml](https://github.com/buaainfo/buaainfo/blob/main/mkdocs.yml) 的 nav 部分，这样方便您了解我们的大致框架，您可以发现我们更推荐创立单个的md文件，我们建议通过**关键词**来进行命名。
 
 ### 编写文档
 
