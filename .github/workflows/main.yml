@@ -15,4 +15,4 @@ jobs:
       - run:         
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - run: mkdocs gh-deploy --forc
+      - run: mkdocs gh-deploy --force
