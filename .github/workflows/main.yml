@@ -1,4 +1,4 @@
-name: Build documentation with mkdocs and Publish to another repo
+name: BUAAinfo Build
 
 on:
   push:
