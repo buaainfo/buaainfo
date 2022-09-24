@@ -129,12 +129,13 @@ nav:
   - 首页: 
     - index.md
   - 生存指南:
-    - 生存指南一: LivingGuide/index.md
+    - 生存指南: LivingGuide/index.md
   - 常用:
     - 常用站点: CommonUse/site.md
     - 常用电话: CommonUse/phone.md
   - 工具:
     - Tool/index.md
+  - 编写规则: 
+    - write.md
   - 加入我们: 
     - joinus.md
-    - 编写方法: write.md
