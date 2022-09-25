@@ -63,7 +63,7 @@ def bubble_sort(items):
 ```
 ````
 
-```py
+``` py title="bubble_sort.py" linenums="1" hl_lines="2 3"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
@@ -98,7 +98,7 @@ def bubble_sort(items):
 
 然而只能左右对齐。`align=left` `align=right`
 
-```title=
+```title="左对齐"
 [![11d452078cbe08eee9.md.jpg](https://buaa.asia/images/2022/01/17/11d452078cbe08eee9.md.jpg)](https://buaa.asia/image/JKcA){ align=left }
 ```
 
