@@ -47,7 +47,7 @@
 [文字](网址){ .md-button  参数}
 ```
 
-其中参数可以选择 `.md-button--primary` 来填充
+其中 `参数`可以选择 `.md-button--primary` 来填充整个按钮。
 
 此外，`文字`中可以自行添加图标语法，例如 `[发送 :fontawesome-solid-paper-plane:]`会在 `发送`后添加一个小飞机的按钮。其他的图标您可以在[这个地方](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/)搜索到。
 
@@ -63,7 +63,7 @@ def bubble_sort(items):
 ```
 ````
 
-``` py title="bubble_sort.py" linenums="1" hl_lines="2 3"
+```py
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
@@ -96,11 +96,12 @@ def bubble_sort(items):
 
 ## 图像
 
-然而只能左右对齐。` align=left ` ` align=right `
+然而只能左右对齐。`align=left` `align=right`
 
-```title="左对齐"
+```title=
 [![11d452078cbe08eee9.md.jpg](https://buaa.asia/images/2022/01/17/11d452078cbe08eee9.md.jpg)](https://buaa.asia/image/JKcA){ align=left }
 ```
+
 [![11d452078cbe08eee9.md.jpg](https://buaa.asia/images/2022/01/17/11d452078cbe08eee9.md.jpg)](https://buaa.asia/image/JKcA){ align=left }
 
 ## 图表

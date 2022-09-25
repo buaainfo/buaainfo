@@ -21,6 +21,13 @@ pip install \
               mkdocs-git-revision-date-localized-plugin \
               mkdocs-git-authors-plugin \
 ```
+### 第二次编写
+
+如果您是第二次编写，请先pull此仓库，避免您或他人的劳动被覆盖。
+
+```git title="Git"
+git pull
+```
 
 ## 编写
 

@@ -62,9 +62,9 @@ theme:
     - navigation.tabs #pinned_tabs
     - navigation.tracking #right_navi_track
     - navigation.top #go_top
-    #- navigation.indexes #section_index
+    - navigation.indexes #section_index
     - toc.follow #right_navi_roll
-    - toc.integrate #Navi_integration
+    #- toc.integrate #Navi_integration
 
     # Search Settings
     - search.highlight
@@ -140,3 +140,30 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Page tree
+nav:
+  - 首页: 
+    - index.md
+
+  - 生存指南:
+    - LivingGuide/index.md
+    - 上课: LivingGuide/Class.md
+    - 洗衣服: LivingGuide/WashClothes.md
+
+  - 常用:
+    - 常用站点: CommonUse/site.md
+    - 常用电话: CommonUse/phone.md
+
+  - 工具:
+    - Tool/index.md
+
+  - 大众点评:
+    - Comment/index.md
+
+  - 编写规则: 
+    - Write/write.md
+    - 可用的markdown语言: Write/write-md.md
+
+  - 加入我们: 
+    - joinus.md
