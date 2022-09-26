@@ -12,4 +12,4 @@ pip install \
               mkdocs-git-authors-plugin \
 ```
 
-* Then follow [HERE](https://buaainfo.github.io/buaainfo/Write/write/)
+* Then follow [HERE](https://buaainfo.github.io/buaainfo/Write/0_write/)
