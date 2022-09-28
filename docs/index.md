@@ -26,3 +26,7 @@
 `2022年9月24日`
 
 buaa.info 开站测试
+
+## TEST push 
+
+this is a test push to test the doc-update-date problem
