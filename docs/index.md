@@ -11,7 +11,7 @@
 
 ## 关于我们
 
-我们是 [北航指北](https://buaa.info "北航指北") ，目前具有唯一域名 [buaa.info](https://buaa.info "北航指北") ，暂未开放微信公众服务。我们是一个公益组织，我们的愿景是为 [北京航空航天大学](https://buaa.edu.cn "北航") 师生与校友提供最方便快捷的生活或学习服务。
+我们是 [北航指北](https://buaa.info "北航指北") ，目前具有唯一域名 [buaa.info](https://buaa.info "北航指北") ，暂未开放微信 公众服务。我们是一个公益组织，我们的愿景是为 [北京航空航天大学](https://buaa.edu.cn "北航") 师生与校友提供最方便快捷的生活或学习服务。
 
 北航指北 由 Color 和 Phinney 建设，于2022年9月23日正式开站测试，现处于测试调整过程中。
 
@@ -26,7 +26,5 @@
 `2022年9月24日`
 
 buaa.info 开站测试
-
-## TEST push 
-
-this is a test push to test the doc-update-date problem
+  
+ 
