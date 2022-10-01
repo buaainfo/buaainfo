@@ -29,14 +29,14 @@ jobs:
     - name: Build with mkdocs
       run: mkdocs build
     - name: Commit and publish
-      if: ${{ github.ref == 'refs/heads/master' }}
+      if: ${{ github.ref == 'refs/heads/main' }}
       env: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         PUBLISH_REPOSITORY: ${{ secrets.PUBLISH_REPOSITORY }}
         ACTOR: ${{ secrets.ACTOR }}
       run: |
         remote_repo="https://x-access-token:${ACCESS_TOKEN}@github.com/${PUBLISH_REPOSITORY}.git"
-        remote_branch="master"
+        remote_branch="main"
         git_commit_id=$(git rev-parse --short HEAD)
         mkdir _site_remote && cd _site_remote
         git init
