@@ -44,7 +44,7 @@ jobs:
         git config user.email "${ACTOR}@proton.me"
         git remote add origin $remote_repo
         git remote -v
-        git pull origin $remote_branch
+        git pull origin HEAD:gh-pages
         git rm -rf .
         git clean -fxd
         cp -ar ../site/* ../CNAME ./
