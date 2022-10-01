@@ -43,6 +43,7 @@ jobs:
         git config user.name "${ACTOR}"
         git config user.email "${ACTOR}@proton.me"
         git remote add origin $remote_repo
+        git remote -v
         git pull origin $remote_branch
         git rm -rf .
         git clean -fxd
