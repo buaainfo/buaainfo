@@ -51,4 +51,4 @@ jobs:
         touch .nojekyll
         git add .
         git commit -m "Github Action auto build for https://github.com/buaainfo/buaainfo/commit/${git_commit_id}" --allow-empty
-        git push -u origin main
+        git push origin $remote_branch
