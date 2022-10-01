@@ -42,8 +42,7 @@ jobs:
         git init
         git config user.name "${ACTOR}"
         git config user.email "${ACTOR}@proton.me"
-        git remote add origin $remote_repo
-        git remote -v
+        git remote add origin HEAD:gh-pages
         git pull origin HEAD:gh-pages
         git rm -rf .
         git clean -fxd
