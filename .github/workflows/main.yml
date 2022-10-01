@@ -2,9 +2,9 @@ name: Build documentation with mkdocs and Publish to another repo
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 
 jobs:
