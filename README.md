@@ -8,7 +8,7 @@
 
 # BUAA INFO
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=253&lines=WelCome+To+BUAAINFO;Here+We+Live+Together" alt="BUAAINFO Typing SVG" /></a>
+<a href="https://buaa.info"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=253&lines=WelCome+To+BUAAINFO;Here+We+Live+Together" alt="BUAAINFO Typing SVG" /></a>
 </div>
 
 
