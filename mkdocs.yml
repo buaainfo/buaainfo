@@ -93,7 +93,7 @@ plugins:
   #- social: Needing
   #- blog: Needing
   - git-revision-date-localized:
-      type: date
+      type: datetime
       fallback_to_build_date: true
       enable_creation_date: true
       enabled: true
