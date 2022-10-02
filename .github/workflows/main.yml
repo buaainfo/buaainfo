@@ -1,4 +1,4 @@
-name: Build documentation with mkdocs and Publish to another repo
+name: Build and Publish
 
 on:
   push:
@@ -14,7 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout main
+      uses: actions/checkout@v2
+      with:
+          fetch-depth: 0
 
     - name: Set up Python 3
       uses: actions/setup-python@v2
@@ -22,10 +25,9 @@ jobs:
         python-version: 3.x
 
     - name: Install dependencies
-      run: |
-        pip install mkdocs-material mkdocs-git-revision-date-localized-plugin jieba mkdocs-glightbox
+      run: pip install mkdocs-material mkdocs-git-revision-date-localized-plugin jieba mkdocs-glightbox
 
-    - name: Build with mkdocs
+    - name: Build
       run: mkdocs build
 
     - name: Commit and publish
@@ -45,8 +47,8 @@ jobs:
         git config user.name "${ACTOR}"
         git config user.email "${ACTOR}@proton.me"
         git remote add origin $remote_repo
-        git pull origin $remote_branch
         git checkout $remote_branch
+        git pull origin $remote_branch
 
         git rm -rf .
         git clean -fxd
