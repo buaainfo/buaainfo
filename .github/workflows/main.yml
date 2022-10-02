@@ -37,7 +37,7 @@ jobs:
         PUBLISH_REPOSITORY: ${{ secrets.PUBLISH_REPOSITORY }}
         ACTOR: ${{ secrets.ACTOR }}
       run: |
-        git config --global init.defaultBranch main
+        git config --global init.defaultBranch gh-pages
         remote_repo="https://x-access-token:${ACCESS_TOKEN}@github.com/${PUBLISH_REPOSITORY}.git"
         remote_branch="gh-pages"
         git_commit_id=$(git rev-parse --short HEAD)
@@ -47,7 +47,6 @@ jobs:
         git config user.name "${ACTOR}"
         git config user.email "${ACTOR}@proton.me"
         git remote add origin $remote_repo
-        git checkout $remote_branch
         git pull origin $remote_branch
 
         git rm -rf .
