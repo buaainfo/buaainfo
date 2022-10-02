@@ -19,13 +19,7 @@ jobs:
         python-version: 3.*
     - name: Install dependencies
       run: |
-        pip install \
-              mkdocs-material \
-              mkdocs-awesome-pages-plugin \
-              jieba \
-              mkdocs-glightbox \
-              mkdocs-git-revision-date-localized-plugin \
-              mkdocs-git-authors-plugin \
+        pip install mkdocs-material mkdocs-awesome-pages-plugin jieba mkdocs-glightbox mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin
     - name: Build with mkdocs
       run: mkdocs build
     - name: Commit and publish
