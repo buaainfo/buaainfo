@@ -1,5 +1,8 @@
 INHERIT: mkdocs.yml
 plugins:
   - search
+  - git-committers:
+      repository: buaainfo/buaainfo
+      branch: main
   - git-authors
   - offline
