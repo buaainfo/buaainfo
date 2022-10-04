@@ -30,7 +30,7 @@ jobs:
         PUBLISH_REPOSITORY: ${{ secrets.PUBLISH_REPOSITORY }}
         ACTOR: ${{ secrets.ACTOR }}
       run: |
-        pip install mkdocs-material mkdocs-git-revision-date-localized-plugin jieba mkdocs-glightbox
+        pip install mkdocs-material mkdocs-git-revision-date-localized-plugin jieba mkdocs-glightbox mkdocs-git-committers-plugin-2 mkdocs-git-authors-plugin
         git clone https:///oauth2:${ACCESS_TOKEN}@github.com/buaainfo/buaainfo-insiders.git mkdocs-material
         pip install -e mkdocs-material
 
