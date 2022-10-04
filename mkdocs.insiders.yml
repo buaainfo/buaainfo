@@ -1,8 +1,19 @@
 INHERIT: mkdocs.yml
 plugins:
+  - tags:
+      tags_file: LivingGuide/0_Tags.md
+  - git-revision-date-localized:
+      type: datetime
+      fallback_to_build_date: true
+      enable_creation_date: true
+      enabled: true
+  - glightbo
   - search
   - git-committers:
       repository: buaainfo/buaainfo
       branch: main
   - git-authors
   - offline
+  #- social: Needing
+  #- blog: Needing
+  
