@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 大众点评 Comment
 
 ## 主题

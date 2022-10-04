@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 生存指南 Living Guide
 
 ## 主题

@@ -8,6 +8,7 @@ site_description: >-
 # Repository
 repo_name: buaainfo/buaainfo
 repo_url: https://github.com/buaainfo/buaainfo
+edit_uri: edit/main/docs/
 
 # Copyright
 copyright: 版权所有 &copy; 2022 - 2022 BUAA.info
@@ -15,27 +16,30 @@ copyright: 版权所有 &copy; 2022 - 2022 BUAA.info
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
 
   # Appearance
   palette:
-    # Palette toggle for light mode
-    - scheme: default 
-      primary: indigo
-      accent: indigo
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-auto
+        name: 切换到日间模式
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
         name: 切换到夜间模式
 
     # Palette toggle for dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
-        icon: material/weather-sunny
-        name: 切换到日间模式
-
-  features:
-    - navigation.prune
+        icon: material/brightness-4
+        name: 系统偏好设置
 
   icon: 
     admonition:
@@ -51,6 +55,7 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+    repo: fontawesome/brands/github
 
   # Web Settings
   font: false # No Google Font
@@ -65,6 +70,7 @@ theme:
     - navigation.tabs #pinned_tabs
     - navigation.tracking #right_navi_track
     - navigation.top #go_top
+    - navigation.prune
     #- navigation.indexes #section_index
     - toc.follow #right_navi_roll
     - toc.integrate #Navi_integration
@@ -78,7 +84,7 @@ theme:
     - header.autohide
 
     # Announce
-    #- announce.dismiss   Needing
+    - announce.dismiss
 
     # Content
     - content.tabs.link
@@ -87,6 +93,11 @@ theme:
 
 # Extra files
 #extra_css:
+
+extra_javascript: 
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Plugins
 plugins:
@@ -112,7 +123,7 @@ extra:
     - link: https://github.com/buaainfo
       icon: fontawesome/brands/github
       name: BUAAINFO on Github
-  generator: false
+  #  generator: false
 
 # Extensions
 markdown_extensions:
@@ -145,3 +156,5 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true

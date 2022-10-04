@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 可用的markdown语言
 
 > 本文将收录非官方 markdown 语言。
