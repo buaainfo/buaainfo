@@ -25,9 +25,14 @@ jobs:
         python-version: 3.x
 
     - name: Install Indisder Dependencies
+      env: 
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        PUBLISH_REPOSITORY: ${{ secrets.PUBLISH_REPOSITORY }}
+        ACTOR: ${{ secrets.ACTOR }}
       run: |
         pip install mkdocs-material mkdocs-git-revision-date-localized-plugin jieba mkdocs-glightbox
-        pip install git+https:///oauth2:${{ secrets.ACCESS_TOKEN }}@github.com/buaainfo/buaainfo-insiders.git
+        git clone https:///oauth2:${ACCESS_TOKEN}@github.com/buaainfo/buaainfo-insiders.git mkdocs-material
+        pip install -e mkdocs-material
 
     - name: Build
       run: mkdocs build
