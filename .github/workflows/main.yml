@@ -35,7 +35,7 @@ jobs:
         pip install -e mkdocs-material
 
     - name: Build
-      run: mkdocs build
+      run: mkdocs build --config-file mkdocs.insiders.yml
 
     - name: Commit and publish
       if: ${{ github.ref == 'refs/heads/main' }}
