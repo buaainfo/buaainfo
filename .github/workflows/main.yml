@@ -24,8 +24,10 @@ jobs:
       with:
         python-version: 3.x
 
-    - name: Install dependencies
-      run: pip install mkdocs-material mkdocs-git-revision-date-localized-plugin jieba mkdocs-glightbox
+    - name: Install Indisder Dependencies
+      run: |
+        pip install mkdocs-material mkdocs-git-revision-date-localized-plugin jieba mkdocs-glightbox
+        pip install git+https://${ACCESS_TOKEN}@github.com/buaainfo/buaainfo-insiders.git
 
     - name: Build
       run: mkdocs build
