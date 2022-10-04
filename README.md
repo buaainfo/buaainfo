@@ -30,7 +30,7 @@
 
 ## 加入我们
 
-如果您期望完善此文档，我们欢迎您加入到此文档的[编写](https://buaa.info/write/0_write.html)之中！
+如果您期望完善此文档，我们欢迎您加入到此文档的[编写](https://buaa.info/Write/0_write.html)之中！
 
 如果您期望加入此文档的管理和审核任务中，请[联系我们](mailto:buaainfo@proton.com)：buaainfo@proton.com
 
