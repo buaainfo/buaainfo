@@ -4,7 +4,7 @@
 
 ### Fork仓库
 
-首先，您应当从我们的 [Github](https://github.com/buaainfo/buaainfo "仓库") fork我们的仓库至您的账号，这样方便您在本地调试文档，以及保障本文档的质量。
+首先，您应当从我们的 [Github](https://github.com/buaainfo/buaainfo "仓库") fork我们的仓库至您的账号，这样方便您在本地调试文档。
 
 ### 安装必要依赖
 
@@ -15,11 +15,9 @@
 ```shell title="Pip Install"
 pip install \
               mkdocs-material \
-              mkdocs-awesome-pages-plugin \
               jieba \
               mkdocs-glightbox \
               mkdocs-git-revision-date-localized-plugin \
-              mkdocs-git-authors-plugin \
 ```
 ### 第二次编写
 
@@ -35,18 +33,13 @@ git pull
 
 在编写开始时，您应当了解此文档的结构，这样有利于您的push被我们接受。
 
-您可以查看本项目下的 [tree.txt](https://github.com/buaainfo/buaainfo/blob/main/docs/tree.txt) 文档，或者 [mkdocs.yml](https://github.com/buaainfo/buaainfo/blob/main/mkdocs.yml) 的 nav 部分，这样方便您了解我们的大致框架，您可以发现我们更推荐创立单个的md文件，我们建议通过**关键词**来进行命名。
+您可以查看本项目下的 [tree.txt](https://github.com/buaainfo/buaainfo/blob/main/docs/tree.txt) 文档，方便您了解我们的大致框架，我们更推荐创立单个的md文件，我们建议通过**关键词**来进行命名。
 
 ### 编写文档
 
 本文档使用 [markdown](https://www.markdownguide.org/) 语言，请按照 [markdown](https://www.markdownguide.org/) 语言规范进行编写。
 
 除此之外，您可以通过本框架官方的 [docs](https://squidfunk.github.io/mkdocs-material/reference/) 文档，通过调用非官方markdown语言来进行美化或者更直观的表达。
-
-此外，您应当了解您有权利和义务编写的内容：
-
-* **在目录下创建新的md文件进行编写**
-* **在 [mkdocs.yml](https://github.com/buaainfo/buaainfo/blob/main/mkdocs.yml) 中的nav部分添加您的文档的名称及位置**
 
 ### 本地浏览
 
