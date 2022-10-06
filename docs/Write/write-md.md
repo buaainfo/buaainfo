@@ -103,10 +103,10 @@ def bubble_sort(items):
 然而只能左右对齐。`align=left` `align=right`
 
 ```title="左对齐"
-[![11d452078cbe08eee9.md.jpg](https://buaa.asia/images/2022/01/17/11d452078cbe08eee9.md.jpg)](https://buaa.asia/image/JKcA){ align=left }
+[![cat.md.jpg](../assets/images/sample.jpg)](../assets/images/sample.jpg){ align=left }
 ```
 
-[![11d452078cbe08eee9.md.jpg](https://buaa.asia/images/2022/01/17/11d452078cbe08eee9.md.jpg)](https://buaa.asia/image/JKcA){ align=left }
+[![cat.md.jpg](../assets/images/sample.jpg)](../assets/images/sample.jpg){ align=left }
 
 ## 图表
 
