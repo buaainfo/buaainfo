@@ -9,7 +9,7 @@
 <meta content="Color" name="author"/>
 <link href="https://buaa.info/Write/0_write.html" rel="canonical"/>
 <link href="../assets/images/logo.png" rel="icon"/>
-<meta content="mkdocs-1.4.1, mkdocs-material-8.5.6+insiders-4.25.1" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.6+insiders-4.25.1" name="generator"/>
 <title>本文档编写规则 - 北航指北</title>
 <link href="../assets/stylesheets/main.fa1d38d9.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
@@ -17,12 +17,15 @@
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -420,11 +423,11 @@
 <h3 id="_3">安装必要依赖<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <p>开始之前，我们认为您已经懂得一定的 <a href="https://www.python.org/">python</a> 语言以及 <a href="https://www.markdownguide.org/">markdown</a> 语言，并且在您的电脑上安装 <a href="https://www.python.org/downloads/">python 3.x</a> 版本。</p>
 <p>对于本文档，需要您安装必要的库。</p>
-<div class="highlight"><span class="filename">Pip Install</span><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>pip install <span class="se">\</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>              mkdocs-material <span class="se">\</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>              jieba <span class="se">\</span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>              mkdocs-glightbox <span class="se">\</span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>              mkdocs-git-revision-date-localized-plugin <span class="se">\</span>
+<div class="highlight"><span class="filename">Pip Install</span><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">              </span>mkdocs-material<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">              </span>jieba<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">              </span>mkdocs-glightbox<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">              </span>mkdocs-git-revision-date-localized-plugin<span class="w"> </span><span class="se">\</span>
 </code></pre></div>
 <h3 id="_4">第二次编写<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <p>如果您是第二次编写，请先pull此仓库，避免您或他人的劳动被覆盖。</p>
@@ -595,5 +598,5 @@
 <script src="../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
