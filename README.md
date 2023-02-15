@@ -40,9 +40,6 @@
     <img src="https://github-readme-stats.vercel.app/api?username=buaainfo&show_icons=true&theme=tokyonight" width="400" alt="BUAA_INFO">
   </a>
 </div>
-<div align="center">
-    <img src="https://activity-graph.herokuapp.com/graph?username=buaainfo&theme=minimal"  height="200" alt="BUAA_INFO">
-</div>
 
 ## 指北大事
 
